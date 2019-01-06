@@ -5,5 +5,7 @@
   (wrapped (transition "Will be removed past 2019-04-01"))
   (libraries
     js_of_ocaml-compiler js_of_ocaml bytes
+    compiler-libs.common
     compiler-libs.bytecomp compiler-libs.toplevel)
+  (modules_without_implementation jsooTopIntf jsooTopWorkerIntf)
   (preprocess (pps js_of_ocaml-ppx)))
